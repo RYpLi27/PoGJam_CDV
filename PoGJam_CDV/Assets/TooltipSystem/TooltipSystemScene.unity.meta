@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 93634b0a08ca5fc41aa2b9a1ce012fe9
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 2960
+  packageName: Tooltip System
+  packageVersion: 1.05
+  assetPath: Assets/TooltipSystem/TooltipSystemScene.unity
+  uploadId: 6724
