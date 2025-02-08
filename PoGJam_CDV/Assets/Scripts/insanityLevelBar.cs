@@ -12,6 +12,6 @@ public class insanityLevelBar : MonoBehaviour
     }
     void Update()
     {
-        scoreText.text = _insanity.currentInsanity.ToString;
+         //= _insanity.currentInsanity;
     }
 }

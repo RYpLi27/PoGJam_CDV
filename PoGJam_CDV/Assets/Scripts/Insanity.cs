@@ -1,12 +1,13 @@
 ﻿using System;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class Insanity : MonoBehaviour
 {
     [SerializeField] float initialInsanity = 0.0f;
     [SerializeField] public float maxInsanity = 100.0f;
     [SerializeField] public float currentInsanity = 1.0f;
-
+    [SerializeField] private Slider playerSanityBar;
+    public Image insanityBar;
 
 
     public void ChangeInsanityValue(float amountToChange = 15.0f)
@@ -35,11 +36,27 @@ public class Insanity : MonoBehaviour
             currentInsanity += 0.02f;
             //currentInsanity += 0.02f * roomNumber;
             Debug.Log(currentInsanity);
+            if (Input.GetKeyDown(KeyCode.LeftAlt))
+            {
+                Suffer(20);
+            }
+
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                Sanity(5);
+            }
         }
     }
 
-    internal void ChangeInsanityValue()
+public void Suffer(float insaneDamage)
     {
-        throw new NotImplementedException();
+        currentInsanity -= insaneDamage;
+        insanityBar.fillAmount = currentInsanity / 100.0f;
+    }
+    public void Sanity(float SaneAmount)
+    {
+        currentInsanity += SaneAmount;
+        currentInsanity = Mathf.Clamp(currentInsanity, 0, 100);
+        insanityBar.fillAmount *= currentInsanity / 100.0f;
     }
 }
