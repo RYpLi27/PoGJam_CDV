@@ -47,6 +47,7 @@ public class Interactionsystem : MonoBehaviour
             if (RaycastHit.collider.CompareTag("CursedObjects"))
             {
                 RaycastHit.collider.gameObject.SetActive(false);
+                                                                                     
                 Debug.Log("whatIsCursed");
 
             }
