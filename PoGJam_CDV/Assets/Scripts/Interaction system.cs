@@ -21,15 +21,19 @@ public class Interactionsystem : MonoBehaviour
     private void Update()
     {
         MyInput();
-        click();
+        //click();
     }
     private void MyInput()
     {
-        if (allowButtonHold) clicking = Input.GetMouseButton(0);
-        else clicking = Input.GetKeyDown(KeyCode.Mouse0);
+        //if (allowButtonHold) clicking = Input.GetMouseButton(0);
+        if (Input.GetMouseButtonDown(0))
+        {
+            click();
+        }
+        //else clicking = Input.GetKeyDown(KeyCode.Mouse0);
     }
     //click();
-
+    
     private void click()
     {
         Ray ray = new Ray(playerCam.transform.position, playerCam.transform.forward);
