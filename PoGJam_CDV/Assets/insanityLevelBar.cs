@@ -1,16 +1,17 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class insanityLevelBar : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public Transform player;
+    public Text scoreText;
+    public Insanity _insanity;
+    private void Start()
     {
-        
+        _insanity = GetComponent<Insanity>();
     }
-
-    // Update is called once per frame
     void Update()
     {
-        
+        scoreText.text = _insanity.currentInsanity.ToString;
     }
 }
