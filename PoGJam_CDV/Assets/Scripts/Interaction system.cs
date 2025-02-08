@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class Interactionsystem : MonoBehaviour
 {
+    [SerializeField] private CursedCounter _CursedCounter;
+
     // stats
     public float timeBetweenClicking, range, timeBetweenClicks;
     public bool allowButtonHold;
@@ -47,7 +49,7 @@ public class Interactionsystem : MonoBehaviour
             if (RaycastHit.collider.CompareTag("CursedObjects"))
             {
                 RaycastHit.collider.gameObject.SetActive(false);
-                                                                                     
+                _CursedCounter.MinusCursedObjects(1);                 
                 Debug.Log("whatIsCursed");
 
             }

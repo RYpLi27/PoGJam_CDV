@@ -6,8 +6,12 @@ public class PlayerMovement : MonoBehaviour
     private Transform _transform;
     [SerializeField] float speed = 5.0f;
     //[SerializeField] float rotationSpeed = 1.0f;
+
+    private Rigidbody _rb;
+
     private void Awake()
     {
+        _rb = GetComponent<Rigidbody>();
         _transform = GetComponent<Transform>();
         //_transform = this.transform;
     }
@@ -17,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
         float horizontalMove = Input.GetAxis("Horizontal");
         float verticalMove = Input.GetAxis("Vertical");
         Vector3 moveVector = verticalMove * _transform.forward + horizontalMove * _transform.right;
-        _transform.position = _transform.position + moveVector * speed * Time.deltaTime;
+        _rb.MovePosition(_rb.position + moveVector * speed * Time.deltaTime);
+        //_transform.position = _transform.position + moveVector * speed * Time.deltaTime;
     }
 }

@@ -35,7 +35,6 @@ public class Insanity : MonoBehaviour
         {
             currentInsanity += 0.02f;
             //currentInsanity += 0.02f * roomNumber;
-            Debug.Log(currentInsanity);
             if (Input.GetKeyDown(KeyCode.LeftAlt))
             {
                 Suffer(20);
