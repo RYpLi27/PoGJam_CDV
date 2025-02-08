@@ -3,26 +3,20 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] float speed = 10.0f;
-    [SerializeField] float rotationSpeed = 1.0f;
-    [SerializeField] GameObject player;
-    [SerializeField] float turnSpeed;
-    [SerializeField] float horizontalInput;
-    [SerializeField] float forwardInput;
-    // Update is called once per frame
-    void FixedUpdate()
+    private Transform _transform;
+    [SerializeField] float speed = 5.0f;
+    //[SerializeField] float rotationSpeed = 1.0f;
+    private void Awake()
     {
-        //float yMouse = Input.GetAxis("Mouse X");
-        //float xMouse = Input.GetAxis("Mouse Y");
-
-        horizontalInput = Input.GetAxis("Horizontal");
-        forwardInput = Input.GetAxis("Vertical");
-
-        transform.position = player.transform.position;
-        transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
-        //transform.Rotate(Vector3.right, turnSpeed * horizontalInput * Time.deltaTime);
-
+        _transform = GetComponent<Transform>();
+        //_transform = this.transform;
     }
 
-                                                          //Best wishes, -Lincoln Green 
+    void FixedUpdate()
+    {
+        float horizontalMove = Input.GetAxis("Horizontal");
+        float verticalMove = Input.GetAxis("Vertical");
+        Vector3 moveVector = verticalMove * _transform.forward + horizontalMove * _transform.right;
+        _transform.position = _transform.position + moveVector * speed * Time.deltaTime;
+    }
 }

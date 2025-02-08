@@ -2,17 +2,32 @@ using UnityEngine;
 
 public class PlayerLook : MonoBehaviour
 {
-    public float horizontalSpeed = 2.0F;
-    public float verticalSpeed = 2.0F;
-    private void Start()
+    private Transform _transform;
+    //[SerializeField] float xSensitivity = 4.0f;
+    //[SerializeField] float ySensitivity = 4.0f;
+    [SerializeField] float mouseSensitivity = 4.0f;
+    private Transform _cameraTransform;
+    private float _cameraPitch = 45.0f;
+    private void Awake()
     {
-        transform.Rotate(1, 1, 0);
+        _transform = GetComponent<Transform>();
+
+        Camera camera = GetComponentInChildren<Camera>();
+        _cameraTransform = camera.GetComponent<Transform>();
     }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Update()
     {
-        float horizontal = horizontalSpeed * Input.GetAxis("Mouse X");
-        float vertical = verticalSpeed * Input.GetAxis("Mouse Y");
-        transform.Rotate(-vertical, horizontal, 0);
+        float mouseX = Input.GetAxis("Mouse X");
+        float mouseY = Input.GetAxis("Mouse Y");
+
+        _transform.Rotate(Vector3.up, mouseX * mouseSensitivity);
+        _cameraPitch += mouseY * mouseSensitivity;
+
+        // To cos robi, ze kamera sie limituje na max pion i poziom
+        _cameraPitch = Mathf.Clamp(_cameraPitch, -90.0f, 90.0f);
+
+        Quaternion xRotation = Quaternion.Euler(-_cameraPitch, 0.0f, 0.0f);
+        _cameraTransform.localRotation = xRotation;
+        //_cameraTransform.Rotate(Vector3.right, -mouseY * mouseSensitivity);
     }
 }

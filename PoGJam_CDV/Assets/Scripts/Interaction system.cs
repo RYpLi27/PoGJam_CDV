@@ -1,0 +1,52 @@
+using UnityEngine;
+
+public class Interactionsystem : MonoBehaviour
+{
+    // stats
+    public float timeBetweenClicking, range, timeBetweenClicks;
+    public bool allowButtonHold;
+
+    bool clicking, readyToClick;
+
+    //reference
+    public Camera playerCam;
+    public Transform attackPoint;
+    public RaycastHit RaycastHit;
+    public LayerMask whatIsCursed;
+
+    private void Awake()
+    {
+        readyToClick = true;
+    }
+    private void Update()
+    {
+        MyInput();
+    }
+    private void MyInput()
+    {
+        if (allowButtonHold) clicking = Input.GetMouseButton(0);
+        else clicking = Input.GetKeyDown(KeyCode.Mouse0);
+    }
+    //click();
+
+    private void click()
+    {
+        if (Physics.Raycast(playerCam.transform.position, playerCam.transform.forward, out RaycastHit, range, whatIsCursed))
+        {
+            Debug.Log(RaycastHit.collider);
+
+            if (RaycastHit.collider.CompareTag("CursedObject"))
+            {
+                Debug.Log("whatIsCursed");
+            }
+        }
+                //RaycastHit.collider.GetComponent<>().Funkcja(instanity);
+        if (readyToClick = false){
+            Invoke("ResetShot", timeBetweenClicking);
+            Invoke("click", timeBetweenClicks); }
+    }
+    private void ResetShot()
+    {
+        readyToClick = true;
+    }
+}
