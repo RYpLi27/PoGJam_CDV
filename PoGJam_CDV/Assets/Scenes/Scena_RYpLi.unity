@@ -1057,6 +1057,7 @@ GameObject:
   - component: {fileID: 1629270604}
   - component: {fileID: 1629270605}
   - component: {fileID: 1629270606}
+  - component: {fileID: 1629270607}
   m_Layer: 6
   m_Name: HandSprite1
   m_TagString: Untagged
@@ -1176,6 +1177,18 @@ MonoBehaviour:
   whatIsCursed:
     serializedVersion: 2
     m_Bits: 128
+--- !u!114 &1629270607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1629270602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b8d694fc46491541b9af1934a94c130, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2059801942
 GameObject:
   m_ObjectHideFlags: 0

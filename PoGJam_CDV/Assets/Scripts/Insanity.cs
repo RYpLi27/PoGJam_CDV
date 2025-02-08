@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class Insanity : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class Insanity : MonoBehaviour
 
 
 
-    public void ChangeInsanityValue(float amountToChange)
+    public void ChangeInsanityValue(float amountToChange = 15.0f)
     {
         currentInsanity += amountToChange;
         if (currentInsanity > maxInsanity)
@@ -35,5 +36,10 @@ public class Insanity : MonoBehaviour
             //currentInsanity += 0.02f * roomNumber;
             Debug.Log(currentInsanity);
         }
+    }
+
+    internal void ChangeInsanityValue()
+    {
+        throw new NotImplementedException();
     }
 }

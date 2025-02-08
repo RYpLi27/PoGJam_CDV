@@ -21,6 +21,7 @@ public class Interactionsystem : MonoBehaviour
     private void Update()
     {
         MyInput();
+        click();
     }
     private void MyInput()
     {
@@ -31,12 +32,17 @@ public class Interactionsystem : MonoBehaviour
 
     private void click()
     {
-        if (Physics.Raycast(playerCam.transform.position, playerCam.transform.forward, out RaycastHit, range, whatIsCursed))
+        Ray ray = new Ray(playerCam.transform.position, playerCam.transform.forward);
+
+        Debug.DrawRay(playerCam.transform.position, playerCam.transform.forward * range, Color.red);
+
+        if (Physics.Raycast(ray, out RaycastHit, range, whatIsCursed))
         {
             Debug.Log(RaycastHit.collider);
 
-            if (RaycastHit.collider.CompareTag("CursedObject"))
+            if (RaycastHit.collider.CompareTag("CursedObjects"))
             {
+                RaycastHit.collider.gameObject.SetActive(false);
                 Debug.Log("whatIsCursed");
             }
         }

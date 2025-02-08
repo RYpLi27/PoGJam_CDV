@@ -29,5 +29,7 @@ public class PlayerLook : MonoBehaviour
         Quaternion xRotation = Quaternion.Euler(-_cameraPitch, 0.0f, 0.0f);
         _cameraTransform.localRotation = xRotation;
         //_cameraTransform.Rotate(Vector3.right, -mouseY * mouseSensitivity);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = true;
     }
 }
