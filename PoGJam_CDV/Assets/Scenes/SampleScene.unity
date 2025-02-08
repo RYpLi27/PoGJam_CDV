@@ -208,6 +208,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.75, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -216,6 +217,8 @@ Transform:
   m_Father: {fileID: 831677781}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 =======
+=======
+>>>>>>> origin/mniam
   m_LocalRotation: {x: -0, y: -0.9533165, z: -0, w: 0.30197293}
   m_LocalPosition: {x: 0.23, y: 1, z: -3.64}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -223,7 +226,10 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -144.848, z: 0}
+<<<<<<< HEAD
 >>>>>>> ab57dc9 (birdie)
+=======
+>>>>>>> origin/mniam
 --- !u!114 &330585547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1281,6 +1287,7 @@ Transform:
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &1002499911
 GameObject:
   m_ObjectHideFlags: 0
@@ -1905,12 +1912,15 @@ PrefabInstance:
 >>>>>>> ab57dc9 (birdie)
 =======
 >>>>>>> 81a9b33 (scena1)
+=======
+>>>>>>> origin/mniam
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 410087041}
   - {fileID: 832575519}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   - {fileID: 831677781}
@@ -1930,3 +1940,5 @@ SceneRoots:
 >>>>>>> 8826a46 (books)
 =======
 >>>>>>> 81a9b33 (scena1)
+=======
+>>>>>>> origin/mniam
