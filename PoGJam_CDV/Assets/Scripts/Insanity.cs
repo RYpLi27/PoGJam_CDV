@@ -4,8 +4,8 @@ using UnityEngine;
 public class Insanity : MonoBehaviour
 {
     [SerializeField] float initialInsanity = 0.0f;
-    [SerializeField] float maxInsanity = 100.0f;
-    [SerializeField] float currentInsanity = 1.0f;
+    [SerializeField] public float maxInsanity = 100.0f;
+    [SerializeField] public float currentInsanity = 1.0f;
 
 
 
