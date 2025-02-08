@@ -33,7 +33,7 @@ public class Interactionsystem : MonoBehaviour
     private void click()
     {
         Ray ray = new Ray(playerCam.transform.position, playerCam.transform.forward);
-
+            
         Debug.DrawRay(playerCam.transform.position, playerCam.transform.forward * range, Color.red);
 
         if (Physics.Raycast(ray, out RaycastHit, range, whatIsCursed))
@@ -44,6 +44,7 @@ public class Interactionsystem : MonoBehaviour
             {
                 RaycastHit.collider.gameObject.SetActive(false);
                 Debug.Log("whatIsCursed");
+
             }
         }
                 //RaycastHit.collider.GetComponent<>().Funkcja(instanity);
