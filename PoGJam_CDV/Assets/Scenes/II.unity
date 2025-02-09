@@ -15339,7 +15339,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4721473952586622423, guid: 73080b2c4fdd0c540989e56af93fe576, type: 3}
       propertyPath: m_text
-      value: "Szale\u0144stwo zaczyna ci\u0119 dopada\u0107"
+      value: Madness is starting to get the hold of you
+      objectReference: {fileID: 0}
+    - target: {fileID: 4721473952586622423, guid: 73080b2c4fdd0c540989e56af93fe576, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: aa74ea9c1a77ada4ba68a73a5bb0020e, type: 2}
+    - target: {fileID: 4721473952586622423, guid: 73080b2c4fdd0c540989e56af93fe576, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -8290682420581929955, guid: aa74ea9c1a77ada4ba68a73a5bb0020e, type: 2}
+    - target: {fileID: 4721473952586622423, guid: 73080b2c4fdd0c540989e56af93fe576, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5550820055898492344, guid: 73080b2c4fdd0c540989e56af93fe576, type: 3}
       propertyPath: m_AnchorMax.y

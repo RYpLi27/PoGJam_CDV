@@ -9391,6 +9391,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 13700000, guid: 0646ceebc81f52a4e8a676e94ab46092, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: af4b1e008b69f0b498a52a87925fd2e7, type: 2}
     - target: {fileID: 100122, guid: 2eeda2bfa864a3b4ea31d02ad1d7d8de, type: 3}
       propertyPath: m_Name
       value: bird@watch02
@@ -9456,10 +9460,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 9100000, guid: a24ec9cf4c2103646a47e0497a925d6b, type: 2}
     - target: {fileID: 13700000, guid: 2eeda2bfa864a3b4ea31d02ad1d7d8de, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: af4b1e008b69f0b498a52a87925fd2e7, type: 2}
-    - target: {fileID: 13700000, guid: 0646ceebc81f52a4e8a676e94ab46092, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: af4b1e008b69f0b498a52a87925fd2e7, type: 2}
@@ -16936,7 +16936,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4721473952586622423, guid: 73080b2c4fdd0c540989e56af93fe576, type: 3}
       propertyPath: m_text
-      value: "Szale\u0144stwo dobieg\u0142o ko\u0144ca"
+      value: The madness has ended
       objectReference: {fileID: 0}
     - target: {fileID: 5550820055898492344, guid: 73080b2c4fdd0c540989e56af93fe576, type: 3}
       propertyPath: m_AnchorMax.y
