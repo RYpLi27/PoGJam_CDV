@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 52ed9a7c024c50749824b520b47689a9
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 2960
+  packageName: Tooltip System
+  packageVersion: 1.05
+  assetPath: Assets/TooltipSystem/Resources/ObjectDetails/object_info.txt
+  uploadId: 6724

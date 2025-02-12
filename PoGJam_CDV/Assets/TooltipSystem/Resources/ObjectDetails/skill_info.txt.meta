@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: d84ab1f95cf8ea645a5c74e42675fa76
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 2960
+  packageName: Tooltip System
+  packageVersion: 1.05
+  assetPath: Assets/TooltipSystem/Resources/ObjectDetails/skill_info.txt
+  uploadId: 6724

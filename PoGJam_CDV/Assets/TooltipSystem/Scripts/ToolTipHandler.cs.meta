@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: db27a4059c700554e9b6e854be1bb610
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 2960
+  packageName: Tooltip System
+  packageVersion: 1.05
+  assetPath: Assets/TooltipSystem/Scripts/ToolTipHandler.cs
+  uploadId: 6724
